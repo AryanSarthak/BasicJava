@@ -1,4 +1,4 @@
-import basicjava.FlipCoin;
+package basicjava;
 
 import java.util.Scanner;
 
@@ -8,6 +8,9 @@ public class Main {
         int n = sc.nextInt();
         FlipCoin obj = new FlipCoin(n);
         obj.findPercentage();
+        int year = sc.nextInt();
+        LeapYear yearObj = new LeapYear(year);
+        yearObj.isLeapYear();
         sc.close();
-        }
+    }
 }
